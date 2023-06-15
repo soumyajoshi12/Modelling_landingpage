@@ -1,0 +1,686 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: gilroy;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+#nav{
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+}
+
+#nav #one{
+    width: 40%;
+    height: 100%;
+    border-right: 2px solid black;
+    padding: 6px 30px 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav #one h2{
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+#nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#nav #two{
+    width: 18%;
+    height: 100%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav #three{
+    width: 27%;
+    height: 100%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav #four{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pic{
+    width: 90%;
+    height: 80%;
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1509967419530-da38b4704bc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=895&q=80);
+    background-position: center;
+    background-size: cover;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+#pic #text{
+    width: 90%;
+    height: 40%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#pic #text #up{
+    height: 60%;
+    justify-content: space-between;
+    display: flex;
+}
+
+#pic #text #up h1{
+    color: white;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 47px;
+}
+
+#pic #text #up #circle{
+    width: 50px;
+    height: 50px;
+    z-index: 99;
+    border-radius: 100px;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text>hr{
+    color: white;
+}
+
+#pic #text #down{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#pic #text #down a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+#options{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    gap: 57px;
+}
+
+#options .oval{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: aliceblue;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+#options #a{
+    margin-left: -2%;
+}
+
+#options h6{
+    margin-left: 18px;
+    font-weight: 400;
+}
+
+#options .oval img{
+    width: 100%;
+    height: 100%;
+}
+
+#alpha {
+    width: 100%;
+    height: 8%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    padding: 10px 50px;
+    margin-top: 30px;
+}
+
+#alpha #all{
+    border-bottom: 2px solid black;
+}
+
+#alpha #letters{
+    margin-left: 70px;
+    display: flex;
+    gap: 32px;
+}
+
+#alpha #letters #round{
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#alpha .light{
+    font-weight: 300;
+}
+
+#vogue{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+#vogue #side1{
+    width: 40%;
+    height: 100%;
+}
+
+#vogue #side1 #girl1{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#vogue #side1 #vhead h1{
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+#vogue img{
+    width: 100%;
+    height: 100%;
+}
+
+#vogue #side2{
+    width: 30%;
+    height: 90%;
+}
+
+#vogue #side2 #girl2{
+    width: 100%;
+    height: 69%;
+    background-color: yellow;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#vogue #side2 #content{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#vogue #content #text1{
+    width: 40%;
+    height: 100%;
+}
+
+#vogue #content #text1 h6{
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+
+#vogue #content #text2{
+    width: 30%;
+    height: 100%;
+    font-size: 10px;
+}
+
+#vogue #content #text2 p{
+    font-weight: 500;
+}
+
+#btm3{
+    width: 100%;
+    height: 80%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btm3 #left{
+    width: 30%;
+    height: 100%;
+}
+
+#btm3 #left #top{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+#btm3 #left #top img{
+    width: 120px;
+    height: 120px;
+    margin-left: 25%;
+    margin-top: 15%;
+}
+
+#btm3 #left #bottom{
+    width: 100%;
+    height: 20%;
+}
+
+
+#btm3 #right{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1512646737873-990ddc1a8e48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=406&q=80);
+    background-size: cover;
+    background-position: top;
+}
+
+#btm4{
+    width: 84%;
+    height: 75%;
+    background-image: url(https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-position: center;
+    background-size: cover;
+    margin-left: 8%;
+    margin-top: 20px;
+    position: relative;
+}
+
+#btm4 #ccc{
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btm5{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btm5 h1{
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+#btm6{
+    width: 100%;
+    height: 80%;
+    padding: 0px 100px ;
+}
+
+#btm6 .one{
+    width: 100%;
+    height: 20%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    padding: 5px 30px;
+    justify-content: space-between;
+}
+
+#btm6 .l{
+    width: 20%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#btm6 .c{
+    width: 10%;
+    height: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#btm6 .c img{
+    width: 100%;
+    height: 100%;
+}
+
+#btm6 .c3{
+    width: 15%;
+    height: 100%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#btm6 .r{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#btm7{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btm7 #orange{
+    width: 40%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1665504953601-d73fe3e91a8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#btm7 #apple{
+    width: 40%;
+    height: 100%;
+}
+
+#btm7 #apple #text{
+    width: 100%;
+    height: 45%;
+}
+
+#btm7 #apple h1{
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#btm7 #apple h6{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#btm7 #apple p{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+#btm7 #apple #foto {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btm7 #apple #foto #one{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1665153856945-1ab42f6c6d96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+#btm7 #apple #foto #two{
+    width: 40%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1660317124738-99cd716766f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+#btm8{
+    width: 100%;
+    height: 90%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#btm8 img{
+    width: 88%;
+    height: 90%;
+}
+
+#cc{
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btm9{
+    width: 100%;
+    height: 80%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btm9 img{
+    width: 100%;
+    height: 100%;
+}
+
+#btm9 #card1{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#btm9 #card2{
+    width: 30%;
+    height: 100%;
+}
+
+#btm9 #card2 #card{
+    width: 100%;
+    height: 70%;
+    background-color: #fff;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#btm9 #card2 #text{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    margin-top: 50px;
+}
+
+#btm9 #card2 #text h6{
+    font-size: 13px;
+    margin-right: 5%;
+}
+
+#btm9 #card2 #text p{
+    font-size: 10px;
+    margin-left: 5%;
+}
+
+#strip{
+    margin-top: 5%;
+    width: 100%;
+    height: 13%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+}
+
+#strip h1{
+    margin-left: -4%;
+    letter-spacing: 2px;
+    color: transparent;
+    white-space: nowrap;
+    font-weight: 900;
+    font-size: 60px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#btm10{
+    width: 100%;
+    height: 65%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btm10 #blog1{
+    width: 15%;
+    height: 100%;
+}
+
+#btm10 #blog1 h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+#btm10 #blog2{
+    width: 27%;
+    height: 100%;
+}
+
+#btm10 #blog3{
+    width: 27%;
+    height: 100%;
+}
+
+#btm10 .upper{
+    width: 100%;
+    height: 30%;
+}
+
+#btm10 .upper h6{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#btm10 .neeche{
+    width: 100%;
+    height: 70%;
+    background-color: blue;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#btm10 img{
+    width: 100%;
+    height: 100%;
+}
+
+#last{
+    width: 100%;
+    height: 40%;
+    margin-top: 8%;
+}
+
+#last #border{
+    width: 100%;
+    height: 90%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+}
+
+#last #border #king1{
+    width: 40%;
+    height: 100%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+#border #king1 h2{
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+#border #king1 h4{
+    margin-top: 20px;
+}
+
+#last #border #king2{
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid black;
+    padding: 33px 70px;
+} 
+
+#last #border #king3{
+    width: 40%;
+    height: 100%;
+}
+
+#last #border #king3 #upar{
+    width: 100%;
+    height: 40%;
+    border-bottom: 2px solid black;
+    padding: 20px 30px;
+}
+
+#last #border #king3 #niche{
+    padding: 20px 0px;
+}
+
+#last #king3 #niche #icon i{
+    margin-left: 20px;
+}
+
+#king3 #niche p{
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
